@@ -26,7 +26,7 @@
     .map((row, i) => row.map((_, j) => baseCode[j][i]))
     .map(hints);
 
-  $: code = [...baseCode.map(row => [...row.map(row => row)])];
+  $: code = [...baseCode.map(row => [...row.map(cell => 0)])];
 
   $: currRowHints = code.map(hints);
   $: rowHints = baseRowHints.map(
