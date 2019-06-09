@@ -115,7 +115,7 @@
     grid-template-rows: 250px 500px;
     grid-template-columns: 250px 500px;
 
-    margin-bottom: 256px;
+    margin-bottom: 64px;
   }
 
   .rowHints {
@@ -150,7 +150,7 @@
   .rowHint .hintCell {
     display: inline-block;
     width: 21px;
-    padding-top: 2px;
+    padding-top: 1px;
 
     text-align: center;
   }

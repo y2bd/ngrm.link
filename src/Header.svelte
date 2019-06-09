@@ -96,9 +96,10 @@
 
 <style>
   article {
-    max-width: 800px;
+    max-width: 825px;
     margin: auto;
     margin-top: 128px;
+    margin-bottom: 128px;
   }
 
   h1,
@@ -138,5 +139,24 @@
     </p>
 
     <Nonogram baseCode={qrCode} {puzzleCode} />
+
+    <h3>controls</h3>
+
+    <ul>
+      <li>left click: mark a square as correct</li>
+      <li>
+        right click: mark a square with a red hint (for personal purposes)
+      </li>
+      <li>
+        middle click: mark a square with a blue hint (for personal purposes)
+      </li>
+    </ul>
+
+    <p>
+      don't know what this is?
+      <a href="https://en.wikipedia.org/wiki/Nonogram">
+        here's the wikipedia page on nonograms.
+      </a>
+    </p>
   {/if}
 </article>
