@@ -21,12 +21,16 @@
       .filter(elem => elem);
   }
 
-  $: baseRowHints = baseCode.map(hints);
-  $: baseColHints = baseCode
+  let baseRowHints = baseCode.map(hints);
+  let baseColHints = baseCode
     .map((row, i) => row.map((_, j) => baseCode[j][i]))
     .map(hints);
 
-  $: code = [...baseCode.map(row => [...row.map(cell => 0)])];
+  let code = [...baseCode.map(row => [...row.map(cell => 0)])];
+
+  window.cheat = () => {
+    code = [...baseCode.map(row => [...row.map(cell => cell)])];
+  };
 
   $: currRowHints = code.map(hints);
   $: rowHints = baseRowHints.map(
